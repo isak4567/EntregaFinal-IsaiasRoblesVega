@@ -289,13 +289,14 @@ main {
 
 .estudioAbogacia p {
   text-align: justify;
+  font-family: 'Lucida Sans Unicode', sans-serif;
   margin: 0.8em 0.5em 2em 0.5em;
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: 900;
 }
 
 .estudioAbogacia p span {
-  font-weight: 1.2em;
+  font-weight: 900;
   color: #00277a;
 }
 
@@ -326,7 +327,7 @@ main {
 }
 
 .descripciónAbogado {
-  background-color: rgba(92, 123, 126, 0.945);
+  background-color: rgba(52, 84, 87, 0.945);
   min-height: 300px;
   width: 30%;
   z-index: 2;
@@ -523,6 +524,9 @@ textarea:focus {
   }
   /* Pagina Servicios - fin */
   /* QuienesSomos - principio */
+  .estudioAbogacia p {
+    font-size: 1em;
+  }
   .contenedorAbogados {
     -webkit-box-shadow: 10px -10px 3px 3px rgba(0, 0, 0, 0.329);
             box-shadow: 10px -10px 3px 3px rgba(0, 0, 0, 0.329);
@@ -558,6 +562,9 @@ textarea:focus {
   /* QuienesSomos */
   .quienesSomos {
     margin-top: 24%;
+  }
+  .estudioAbogacia p {
+    font-size: 1em;
   }
   .descripciónAbogado h2 {
     font-size: 1.5em;
