@@ -181,7 +181,7 @@ $servicios: (
     contenedorServiciosItem1: url(../Img/indemnizacion-laboral.jpg),
     contenedorServiciosItem2: url(../Img/indemnizacion-discapacidad.jpg),
     contenedorServiciosItem3: url(../Img/indemnizacion-fallecimiento.jpg),
-    contenedorServiciosItem4: url(../Img/indemnizacion-laboral.jpg),
+    contenedorServiciosItem4: url(../Img/Indemnizacion-familia.jpg),
 );
 
 @each $contenedorServiciosItem, $bgImage in $servicios {
@@ -206,7 +206,7 @@ $servicios: (
     border-radius: 120px;
     box-shadow: 0px 30px 25px 5px rgba(0, 0, 0, 0.26);
 
-    h2 {
+    h1,h2 {
         @include fontBold(2.5em, 700);
     }
 
@@ -430,10 +430,9 @@ textarea {
 
 .redesSociales {
     align-items: center;
-}
-
-.faceIcon {
-    margin: 0% 8%;
+    a {
+        margin: 6px;
+    }
 }
 
 .faceIcon,
