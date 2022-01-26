@@ -135,6 +135,10 @@ main {
   color: aquamarine;
 }
 
+.contenedorPortadaEstudioAbogados button:focus {
+  background-color: #172c5a;
+}
+
 .servicios h2 {
   font-size: 3em;
   font-weight: 700;
@@ -238,7 +242,7 @@ main {
   font-weight: 700;
 }
 
-.servicio h3 {
+.servicio h3, .servicio .acoso {
   font-size: 2em;
   font-weight: 700;
 }
@@ -271,6 +275,10 @@ main {
 
 .botonServicio:hover, .botonConsulta:hover {
   color: aquamarine;
+}
+
+.botonServicio:focus, .botonConsulta:focus {
+  background-color: #172c5a;
 }
 
 /* Pagina Servicios - fin */
@@ -347,6 +355,75 @@ main {
 .descripciónAbogado p {
   font-family: "Rubik", sans-serif;
   font-size: 1.2em;
+}
+
+.caracteristicasAbogado {
+  opacity: 0;
+  min-height: 300px;
+  width: 70%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.767);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.caracteristicasAbogado:hover {
+  opacity: 1;
+}
+
+.caracteristicasAbogadoTexto {
+  opacity: 0;
+  height: 100%;
+}
+
+.caracteristicasAbogadoTexto p {
+  padding: 0% 10%;
+  text-align: center;
+  color: #007bff;
+}
+
+.caracteristicasAbogadoTexto:hover {
+  -webkit-animation-name: apareciendo;
+          animation-name: apareciendo;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  opacity: 1;
+}
+
+.caracteristicasAbogadoTexto a:hover {
+  color: #5cc3ff;
+}
+
+@-webkit-keyframes apareciendo {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 30%);
+            transform: translate(0, 30%);
+  }
+  40% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes apareciendo {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 30%);
+            transform: translate(0, 30%);
+  }
+  40% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
 }
 
 /* Pagina QuienesSomos - fin */
